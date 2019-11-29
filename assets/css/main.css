@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light|Source+Sans+Pro:400,700");
+
+@font-face {
+  font-family: 'raleaway';
+  src:url(../fonts/NunitoSans-Regular.ttf);
+}
+
 html {
   overflow-x: hidden;
 }
@@ -26,6 +32,7 @@ h1, h2, h3, h4 {
 }
 
 .script-font {
+  color:#222;
   font-family: 'Shadows Into Light', cursive;
 }
 
@@ -708,7 +715,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 3. Hero Area
 ========================================================================== */
 .hero-area-bg {
-  background: url(../img/hero-area.jpg) no-repeat;
+  background: url(../img/background.jpg) no-repeat;
   background-size: cover;
 }
 
@@ -724,7 +731,8 @@ a.back-to-top:hover, a.back-to-top:focus {
   height: 100%;
   top: 0px;
   left: 0px;
-  background: #0c0808;
+  background:rgba(208, 208, 208, 0.4);
+  /* background: #0c0808; */
   opacity: 0.6;
 }
 
@@ -737,11 +745,13 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 #hero-area .contents .head-title {
-  color: #fff;
+  /* color: #fff; */
+  color:#d8364c;
   font-size: 80px;
   letter-spacing: 10px;
   text-transform: uppercase;
   font-weight: 700;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 #hero-area .contents p {

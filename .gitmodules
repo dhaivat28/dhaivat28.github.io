@@ -1,3 +1,6 @@
 [submodule "projects/natours"]
 	path = projects/natours
 	url = https://github.com/dhaivat28/natours.git
+[submodule "projects/bestprix_design"]
+	path = projects/bestprix_design
+	url = https://github.com/dhaivat28/bestprix_design.git

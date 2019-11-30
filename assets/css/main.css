@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light|Source+Sans+Pro:400,700");
-
-@font-face {
-  font-family: 'raleaway';
-  src:url(../fonts/NunitoSans-Regular.ttf);
-}
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 
 html {
   overflow-x: hidden;
@@ -13,12 +9,12 @@ body {
   background: #fff;
   font-size: 14px;
   font-weight: 400;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Nunito", sans-serif;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-font-smoothing: subpixel-antialiased;
-  color: #666;
+  color: #404040;
   line-height: 25px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -27,8 +23,9 @@ body {
 
 h1, h2, h3, h4 {
   font-size: 38px;
-  font-weight: 700;
-  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  /* font-family: "Source Sans Pro", sans-serif; */
+  font-family: "Nunito", sans-serif;
 }
 
 .script-font {
@@ -57,11 +54,11 @@ p {
   margin: 0px;
   font-size: 14px; */
 
-  font-family:sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: justify;
-    font-weight: 500;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+  font-weight: 500;
 }
 
 ul, ol {
@@ -432,7 +429,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 .timeline li .line-text {
-  color: #888;
+  color: #404040;
 }
 
 .timeline li:first-child:before {
@@ -800,14 +797,71 @@ a.back-to-top:hover, a.back-to-top:focus {
    ========================================================================== */
 #portfolios {
   background: #f2f2f2;
+  
 }
 
 #portfolios .mix {
   padding: 10px;
 }
 
-#portfolios .portfolio-item .shot-item {
+#portfolios .shot-item {
   margin: 0px;
+
+}
+
+#portfolios .portfolio-item  {
+  margin: 0px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border: 1px solid #d0d0d0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  width: 90%;
+}
+
+#portfolios .description-box {
+ padding: 20px 20px 0 20px;
+ text-align: center;
+ font-family: "Nunito", sans-serif;
+ font-size: 16px;
+ line-height: 14px;
+ font-weight: 500
+}
+
+#portfolios .description-box  p{
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #404040;
+ }
+
+#portfolios .github-box {
+  padding:0 0 10px 0;
+  text-align: center;
+}
+
+#portfolios .github-box a{
+  font-size: 18px;
+  font-family: "Nunito", sans-serif;
+  color:#404040;
+  font-weight: 100;
+  transition: color 250ms ease-out;
+}
+
+#portfolios .github-box a:hover{
+color:#d8364c;
+}
+
+h6 a {
+  color: #404040;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  line-height: 1.6;
+  font-size: 20px;
+  transition: color 250ms ease-out;
+}
+
+h6 a:hover {
+  color:#d8364c;
 }
 
 #portfolio .mix {

@@ -806,8 +806,8 @@ a.back-to-top:hover, a.back-to-top:focus {
 
 #portfolios .shot-item {
   margin: 0px;
-
 }
+
 
 #portfolios .portfolio-item  {
   margin: 0px;
@@ -817,6 +817,8 @@ a.back-to-top:hover, a.back-to-top:focus {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   width: 90%;
   background: #fff;
+  height: 525px;
+  position: relative;
 }
 
 #portfolios .description-box {
@@ -838,15 +840,29 @@ a.back-to-top:hover, a.back-to-top:focus {
 
 #portfolios .github-box {
   padding:0 0 10px 0;
-  text-align: center;
+  position: absolute;
+  bottom:0;
+  width: 100%;
 }
 
 #portfolios .github-box a{
-  font-size: 18px;
+  font-size: 15px;
   font-family: "Nunito", sans-serif;
   color:#404040;
   font-weight: 100;
   transition: color 250ms ease-out;
+}
+
+.center-fix {
+  text-align: center;
+}
+
+.center-fix-left {
+  padding-left:55px;
+}
+
+.center-fix-right {
+  padding-right:60px;
 }
 
 #portfolios .github-box a:hover{

@@ -1221,3 +1221,24 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 #copyright p a:hover {
   color: #00b4d9;
 }
+
+/* Custom*/
+.img-circle {
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.skill-set li{
+  display: inline;
+  font-family: "Nunito", sans-serif;
+  line-height: 1.8;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #d8364c;
+  margin-left: 10px;
+}
+
+.skill-set li:before {
+  content: "• ";
+  } 

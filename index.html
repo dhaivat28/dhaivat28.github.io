@@ -147,7 +147,7 @@
           <div class="col-lg-8 col-md-6 col-sm-12 col-xs-12">
             <div class="wow fadeInRight" data-wow-delay="0.3s">
               <h3>Who am I ?</h3>
-              <p>Hello, my name is Dhaivat. I am a Full Stack Developer living in Sydney, Australia. I  pursued masters in Information Technology from Charles Sturt University with specialization in Software Design and Development. In my spare time, I'm usually learning stuff and building sandbox projects to learn. My hobby is spotting planes, watching movies and Listening to Music.</p>
+              <p class="about-me">Hello, my name is Dhaivat. I am a Full Stack Developer living in Sydney, Australia. I  pursued masters in Information Technology from Charles Sturt University with specialization in Software Design and Development. In my spare time, I'm usually learning stuff and building sandbox projects to learn. My hobby is spotting planes, watching movies and Listening to Music.</p>
             </div>
             <div class="wow fadeInRight" data-wow-delay="0.3s">
               <ul class="skill-set">
@@ -263,13 +263,13 @@
               <a class="filter active btn btn-common" data-filter="all">
                 All 
               </a>
-              <a class="filter btn btn-common" data-filter=".Design">
+              <a class="filter btn btn-common" data-filter=".design">
                 Design 
               </a>
-              <a class="filter btn btn-common" data-filter=".Javascript">
+              <a class="filter btn btn-common" data-filter=".javascript">
                 JavaScript
               </a>
-              <a class="filter btn btn-common" data-filter=".Other">
+              <a class="filter btn btn-common" data-filter=".others">
                 Others
               </a>
             </div> 
@@ -278,14 +278,14 @@
           <!-- Portfolio Recent Projects -->
           <div id="portfolio" class="row wow fadeInDown" data-wow-delay="0.4s">
             
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development print">
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix design">
               <div class="portfolio-item">
                 <div class="shot-item">
                   <img src="assets/img/portfolio/natours.png" alt="" />   
                 </div>       
                 <div class="description-box">
                   <h6><a href="http://natours-scss-project.netlify.com/" target="_blank">Natours</a></h6>
-                    <p> I Created this project as a part of my Advanced CSS and Sass course by Jonas Schmedtmann. </p> 
+                    <p> I Created this project as a part of my Advanced CSS and Sass course by Jonas Schmedtmann. The project follows the BEM Methodology and 7-1 Sass Architecture pattern and is responsive over various devices. </p> 
                </div>
                <div class="github-box">
                  <div class="row">
@@ -300,7 +300,31 @@
              </div>
             </div>
 
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development print ">
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix javascript">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <img src="assets/img/portfolio/forkify.png" alt="" />  
+                </div>       
+                <div class="description-box">
+                  <h6><a href="http://aspironweb.com/index.html" target="_blank">Forkify</a></h6>
+                    <p> 
+                      The Forkify project was developed by using Webpack, babel, Javascript ES6 and Food 2 Fork API. The app let you view, shortlist and search among the thousand of recipes Available. It also lets you save receipes and update servings.
+                    </p> 
+               </div>
+               <div class="github-box">
+                  <div class="row">
+                     <div class="col-lg-6 col-md-6 center-fix center-fix-left">
+                       <a href="https://github.com/dhaivat28/forkify" target="_blank">Github <i class="fab fa-github fa-md"></i></a>
+                    </div>
+                    <div class="col-lg-6 col-md-6 center-fix center-fix-right">
+                       <a href="https://forkify-food2fork.netlify.com/" target="_blank">View Project <i style="size:50px;" class="fas fa-external-link-alt fa-"></i></a>
+                    </div>
+                  </div>
+              </div>
+             </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix design">
                 <div class="portfolio-item">
                   <div class="shot-item">
                     <img src="assets/img/portfolio/bestprix.png" alt="" />  
@@ -326,7 +350,7 @@
                </div>
               </div>
 
-              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development print ">
+              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix javascript ">
                 <div class="portfolio-item">
                   <div class="shot-item">
                     <img src="assets/img/portfolio/budgetify.png" alt="" />  
@@ -350,7 +374,7 @@
                </div>
               </div>
 
-                  <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development print">
+                  <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix others">
                       <div class="portfolio-item">
                         <div class="shot-item">
                           <img src="assets/img/portfolio/clientarea.png" alt="" />  
@@ -374,7 +398,7 @@
                      </div>
                   </div>
 
-                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development print">
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix design">
                         <div class="portfolio-item">
                           <div class="shot-item">
                             <img src="assets/img/portfolio/aspiron_web-solutions.png" alt="" />  
@@ -399,29 +423,6 @@
                        </div>
                       </div>
 
-                      <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development print">
-                        <div class="portfolio-item">
-                          <div class="shot-item">
-                            <img src="assets/img/portfolio/forkify.png" alt="" />  
-                          </div>       
-                          <div class="description-box">
-                            <h6><a href="http://aspironweb.com/index.html" target="_blank">Forkify</a></h6>
-                              <p> 
-                                The Forkify project was developed by using Webpack, babel, Javascript ES6 and Food 2 Fork API. The app let you search, shortlist and view among the thousand of recipes Available.
-                              </p> 
-                         </div>
-                         <div class="github-box">
-                            <div class="row">
-                               <div class="col-lg-6 col-md-6 center-fix center-fix-left">
-                                 <a href="https://github.com/dhaivat28/forkify" target="_blank">Github <i class="fab fa-github fa-md"></i></a>
-                              </div>
-                              <div class="col-lg-6 col-md-6 center-fix center-fix-right">
-                                 <a href="https://forkify-food2fork.netlify.com/" target="_blank">View Project <i style="size:50px;" class="fas fa-external-link-alt fa-"></i></a>
-                              </div>
-                            </div>
-                        </div>
-                       </div>
-                      </div>
           </div>
         </div>
       </div>

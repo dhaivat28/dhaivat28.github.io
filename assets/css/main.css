@@ -820,10 +820,10 @@ a.back-to-top:hover, a.back-to-top:focus {
 
 #portfolios .portfolio-item  {
   margin: 20px;
-  border-bottom-right-radius: 6px;
-  border-bottom-left-radius: 6px;
+  /* border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px; */
   border: 1px solid #d0d0d0;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); */
   width: 90%;
   background: #fff;
   height: 525px;

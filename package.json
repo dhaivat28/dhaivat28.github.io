@@ -1,0 +1,27 @@
+{
+  "name": "dhaivat28.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "normalize.css": "^8.0.1",
+    "popper.js": "^1.16.1",
+    "sass": "^1.23.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhaivat28/dhaivat28.github.io.git"
+  },
+  "author": "Dhaivat Parikh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhaivat28/dhaivat28.github.io/issues"
+  },
+  "homepage": "https://github.com/dhaivat28/dhaivat28.github.io#readme"
+}

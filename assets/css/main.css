@@ -516,11 +516,11 @@ a.back-to-top:hover, a.back-to-top:focus {
 
 .top-nav-collapse .navbar-nav .nav-link:hover {
   cursor: pointer;
-  color: #00b4d9 !important;
+  color: rgba(253,115,90,1) !important;
 }
 
 .top-nav-collapse .navbar-nav li.active a.nav-link {
-  color: #00b4d9 !important;
+  color: rgba(253,115,90,1) !important;
 }
 
 .indigo {
@@ -533,7 +533,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 
 .navbar-expand-lg .navbar-nav .nav-link i {
   font-size: 28px;
-  color: #00b4d9;
+  color:rgba(253,115,90,1);
   vertical-align: middle;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -565,7 +565,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 .navbar-expand-lg .navbar-nav li a:hover,
 .navbar-expand-lg .navbar-nav li .active > a,
 .navbar-expand-lg .navbar-nav li a:focus {
-  color: #00b4d9;
+  color:rgba(253,115,90,1);
   outline: none;
 }
 
@@ -574,7 +574,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 .navbar li.active a.nav-link {
-  color: #00b4d9;
+  color: rgba(253,115,90,1);
 }
 
 .dropdown-toggle::after {
@@ -722,7 +722,7 @@ a.back-to-top:hover, a.back-to-top:focus {
   .slicknav_nav a:hover,
   .slicknav_nav a:focus,
   .slicknav_nav .active {
-    color: #00b4d9;
+    color: rgba(253,115,90,1);
     outline: none;
     background: #f8f9fa;
   }
@@ -1176,7 +1176,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 }
 
 .footer-area .footer-text .nav-inline .nav-link:hover {
-  color: #00b4d9;
+  color:rgba(253,115,90,1);
 }
 
 .footer-2 {
@@ -1210,7 +1210,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 }
 
 .footer-2 ul li a:hover {
-  color: #00b4d9;
+  color: rgba(253,115,90,1);
 }
 
 #copyright {
@@ -1228,7 +1228,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 }
 
 #copyright p a:hover {
-  color: #00b4d9;
+  color: rgba(253,115,90,1);
 }
 
 /* Custom*/
@@ -1244,7 +1244,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   display: inline-block;
   font-size: 16px;
   font-weight: 600;
-  color: #d8364c;
+  color: rgba(253,115,90,1);
   margin-left: 10px;
 }
 

@@ -48,6 +48,37 @@
 
   </head>
   <body>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Hey there!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form method="post" action="resume.php">
+              <h5>Inbox me you resume</h5>
+              <div class="input-group mb-3">
+                <input type="text" name="email" class="form-control" placeholder="your email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-common" type="submit" value="Submit">Send :)</button>
+                </div>
+              </div>
+             <div class="row">
+               <div class="col text-center">
+                --<br><br>
+               I prefer to <a target="_blank" href="assets/resume/Dhaivat's Resume.pdf">Download </a> Thanks!
+               </div>
+             </div>
+            </form>
+           </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Header Area wrapper Starts -->
     <header id="header-wrap">
@@ -92,10 +123,12 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a target="_blank" class="nav-link" href="assets/resume/Dhaivat's Resume.pdf">
+                <a target="_blank" class="nav-link" data-toggle="modal" data-target="#exampleModalCenter">
                   Resume
                 </a>
               </li>
+
+
             </ul>
           </div>
         </div>

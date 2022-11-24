@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.css";
 import {
   Header,
   About,
@@ -9,6 +8,7 @@ import {
   Work,
   Navbar,
 } from "./container";
+import "./App.scss";
 
 const App = () => {
   return (

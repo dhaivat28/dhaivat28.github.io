@@ -51,4 +51,6 @@
 
 @theme {
   --font-nunito: 'Nunito', sans-serif;
+  --color-charcoal: #404040;
+  --color-ocean-blue: #1A69AD;
 }

@@ -1,6 +1,11 @@
 import { BrowserRouter } from "react-router-dom";
+import { AboutMe } from "./components/about-me/AboutMe";
+import { Academics } from "./components/Academics/Academics";
+import { Experience } from "./components/experience/Experience";
+import { Footer } from "./components/footer/Footer";
 import { Header } from "./components/header/Header";
-import Hero from "./components/hero/Hero";
+import { Hero } from "./components/hero/Hero";
+import { Projects } from "./components/projects/Projects";
 
 function App() {
   return (
@@ -32,6 +37,11 @@ function App() {
 
       <Header />
       <Hero />
+      <AboutMe />
+      <Projects />
+      <Experience />
+      <Academics />
+      <Footer />
     </BrowserRouter>
   );
 }

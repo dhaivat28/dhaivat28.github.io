@@ -15,17 +15,16 @@ export const Hero = () => {
         <div className="flex flex-col justify-center items-start">
           <div className="flex flex-col gap-4">
             <div>
-              <h1 className="self-start text-5xl font-nunito tracking-wider">
+              <h1 className="text-5xl font-mono font-medium tracking-wider">
                 Hi, I’m
               </h1>
-              <h1 className="self-start text-5xl font-nunito tracking-wider">
+              <h1 className="text-5xl font-mono font-medium tracking-wider">
                 Dhaivat Parikh
               </h1>
             </div>
-            <h1 className="self-start text-5xl font-nunito pl-5 tracking-wider"></h1>
           </div>
 
-          <p className="text-gray-500 text-md max-w-[600px]">
+          <p className="text-gray-500 text-md max-w-[600px] mt-4">
             Software engineer with 5+ years of experience in developing web and
             mobile apps, with a strong focus on building efficient and scalable
             solutions. Experienced in contributing to a range of internal and

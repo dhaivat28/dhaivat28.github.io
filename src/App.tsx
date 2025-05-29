@@ -35,13 +35,30 @@ function App() {
         2XL Screen
       </div>
 
+      <section id="home" />
       <Header />
+
       <Hero />
-      <AboutMe />
-      <Projects />
-      <Experience />
-      <Academics />
-      <Footer />
+
+      <section id="about">
+        <AboutMe />
+      </section>
+
+      <section id="projects">
+        <Projects />
+      </section>
+
+      <section id="experience">
+        <Experience />
+      </section>
+
+      <section id="education">
+        <Academics />
+      </section>
+
+      <section id="contact">
+        <Footer />
+      </section>
     </BrowserRouter>
   );
 }

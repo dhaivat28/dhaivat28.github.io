@@ -20,7 +20,7 @@ export const ProjectCard = ({
         delay: 0.15,
       }}
     >
-      <div className="cursor-pointer mb-10 sm:mb-0 max-w-[330px] border border-[#d0d0d0] text-charcoal rounded-xl">
+      <div className="cursor-pointer mb-10 sm:mb-0 max-w-[330px] border border-[#d0d0d0] text-charcoal rounded-xl bg-white">
         <div>
           <img
             src={image}

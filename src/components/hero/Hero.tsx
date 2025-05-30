@@ -9,9 +9,9 @@ export const Hero = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
-      className="flex container mx-auto border-dotted border-1 border-red-500 p-4 mt-12"
+      className="flex container mx-auto p-4 "
     >
-      <div className="flex-3/5 flex flex-col justify-center items-center border-dotted border-1 border-blue-500">
+      <div className="flex-3/5 flex flex-col justify-center items-center">
         <div className="flex flex-col justify-center items-start">
           <div className="flex flex-col gap-4">
             <div>
@@ -55,7 +55,7 @@ export const Hero = () => {
 
       {/* Profile Image */}
       <motion.div
-        className="flex-2/5 p-4 border-dotted border-1 border-blue-500"
+        className="flex-2/5 p-4"
         initial={{ opacity: 0, y: -180 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}

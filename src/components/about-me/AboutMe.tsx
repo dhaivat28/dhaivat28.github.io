@@ -3,7 +3,7 @@ import { TECH_STACK as techStack } from "./utilt";
 
 export const AboutMe = () => {
   return (
-    <div className="flex container mx-auto border-dotted  p-4 mt-12">
+    <div className="flex container mx-auto border-dotted p-4">
       <div className="flex-1/2 p-4 ">
         <h2 className="font-nunito font-extrabold text-2xl sm:text-3xl mb-6">
           About me...

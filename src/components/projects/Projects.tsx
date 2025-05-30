@@ -27,7 +27,7 @@ export const Projects = () => {
   );
 
   return (
-    <div className="container mx-auto mt-12 p-4 border-dotted border-1 border-red-500">
+    <div className="container mx-auto p-4">
       <div className="text-center">
         <p className="font-nunito font-semibold text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light">
           Projects portfolio

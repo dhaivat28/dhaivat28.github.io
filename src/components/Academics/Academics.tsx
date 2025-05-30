@@ -2,8 +2,8 @@ import { academics, courses } from "./utils";
 
 export const Academics = () => {
   return (
-    <div className="container mx-auto mt-12 flex p-4 border-dotted border-1 border-red-500">
-      <div className="flex-1/2 p-4 border-dotted border-1 border-blue-500">
+    <div className="container mx-auto flex p-4">
+      <div className="flex-1/2 p-4">
         <h2 className="font-nunito font-extrabold text-2xl sm:text-3xl mb-6">
           Education
         </h2>
@@ -34,7 +34,7 @@ export const Academics = () => {
           ))}
         </div>
       </div>
-      <div className="flex-1/2 p-4 border-dotted border-1 border-blue-500">
+      <div className="flex-1/2 p-4">
         <h2 className="font-nunito font-extrabold text-2xl sm:text-3xl mb-6">
           Courses
         </h2>

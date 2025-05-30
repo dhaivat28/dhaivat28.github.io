@@ -2,8 +2,8 @@ import { experiences, formatYearMonth, getExperienceDuration } from "./utils";
 
 export const Experience = () => {
   return (
-    <div className="container mx-auto mt-12 flex p-4 border-dotted border-1 border-red-500">
-      <div className="flex-1/4 p-4 border-dotted border-1 border-blue-500">
+    <div className="container mx-auto flex p-4">
+      <div className="flex-1/4 p-4">
         <p className="font-nunito font-extrabold text-4xl">My Experience</p>
         <p className="font-nunito font-normal text-md mt-4">
           I've had the pleasure of working with companies across various
@@ -15,7 +15,7 @@ export const Experience = () => {
         </p>
       </div>
 
-      <div className="flex-3/4 p-4 border-dotted border-1 border-blue-500">
+      <div className="flex-3/4 p-4">
         <div className="relative">
           <div className="absolute left-[250px] top-1 bottom-0 w-2 rounded-xl bg-gray-300"></div>
           {experiences.map((exp, idx) => (

@@ -2,7 +2,7 @@ import { FaEnvelope, FaGithub, FaPhone } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 export const Footer = () => {
   return (
-    <div className="container mx-auto mt-12 flex flex-col p-4 border-dotted border-1 border-red-500">
+    <div className="container mx-auto flex flex-col p-4">
       <div className="w-fit flex ml-auto gap-4 p-4 ">
         <a
           href="mailto:dhaivat28@gmail.com"

@@ -43,7 +43,7 @@ export const Header: React.FC = () => {
             spy={true}
             offset={-60}
             activeClass="text-ocean-blue"
-            className="font-nunito text-lg font-semibold"
+            className="font-nunito text-base font-semibold"
           >
             {link.name}
           </Link>

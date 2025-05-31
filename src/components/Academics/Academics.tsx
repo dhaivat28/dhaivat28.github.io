@@ -2,7 +2,7 @@ import { academics, courses } from "./utils";
 
 export const Academics = () => {
   return (
-    <div className="container mx-auto flex p-4">
+    <div className="container mx-auto flex p-4 gap-5">
       <div className="flex-1/2 p-4">
         <h2 className="font-nunito font-extrabold text-2xl sm:text-3xl mb-6">
           Education
@@ -12,7 +12,7 @@ export const Academics = () => {
           {academics.map((edu, index) => (
             <div
               key={index}
-              className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md"
+              className="bg-white p-6 rounded-xl border border-[#d0d0d0] text-charcoal space-y-2"
             >
               <div className="flex justify-between items-start sm:items-center flex-col sm:flex-row">
                 <div>
@@ -34,16 +34,17 @@ export const Academics = () => {
           ))}
         </div>
       </div>
+
       <div className="flex-1/2 p-4">
         <h2 className="font-nunito font-extrabold text-2xl sm:text-3xl mb-6">
           Courses
         </h2>
 
-        <div className="space-y-4">
+        <div className="space-y-6">
           {courses.map((course, index) => (
             <div
               key={index}
-              className="p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md space-y-2"
+              className="bg-white p-6 rounded-xl border border-[#d0d0d0] text-charcoal space-y-2"
             >
               <div className="flex flex-col sm:flex-row sm:items-center justify-between">
                 <div>

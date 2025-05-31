@@ -6,7 +6,6 @@ import { Footer } from "./components/footer/Footer";
 import { Header } from "./components/header/Header";
 import { Hero } from "./components/hero/Hero";
 import { Projects } from "./components/projects/Projects";
-import { SectionFadeWrapper } from "./components/shared/sectionFadeWrapper/SectionFadeWrapper";
 import { ViewportHelper } from "./components/ViewportHelper";
 
 function App() {
@@ -22,25 +21,25 @@ function App() {
         <Hero />
       </section>
 
-      <SectionFadeWrapper sectionId="about">
+      <section id="about" className="py-12 bg-[#f8f7f1]">
         <AboutMe />
-      </SectionFadeWrapper>
+      </section>
 
       <section id="projects" className="py-12">
         <Projects />
       </section>
 
-      <SectionFadeWrapper sectionId="experience">
+      <section id="experience" className="py-12 bg-[#f8f7f1]">
         <ExperienceNew />
-      </SectionFadeWrapper>
+      </section>
 
       <section id="education" className="py-12">
         <Academics />
       </section>
 
-      <SectionFadeWrapper sectionId="contact">
+      <section id="contact" className="py-12 bg-[#f8f7f1]">
         <Footer />
-      </SectionFadeWrapper>
+      </section>
     </BrowserRouter>
   );
 }

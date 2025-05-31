@@ -35,7 +35,6 @@ export const ExperienceNew = () => {
                       ? "bg-blue-500"
                       : "bg-gray-300"
                   }
-                
             `}
               />
             ))}

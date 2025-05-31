@@ -1,11 +1,18 @@
 import { DateTime } from "luxon";
 
+export enum ExperienceKey {
+  BingoIndustries = "Bingo Industries",
+  Ezypay = "Ezypay",
+  RevTechMedia = "RevTech Media",
+}
+
 export const experiences = [
   {
     title: "Full Stack Developer",
     company: "Bingo Industries",
     startDate: "2023-01",
     endDate: null,
+    key: ExperienceKey.BingoIndustries,
     description: `Bingo Industries, a <b>leading waste management company in Australia</b>, embarked on a full-scale digital transformation to retire its aging legacy systems. The challenge was to build a modern, enterprise-grade platform <b>GoCollect</b> to manage <b>real-time job servicing, fleet operations, and logistics</b> across multiple departments handling <b>over 2,500 jobs daily</b>.
 
     <br><br>
@@ -21,6 +28,7 @@ export const experiences = [
     company: "Ezypay",
     startDate: "2020-03",
     endDate: "2022-12",
+    key: ExperienceKey.Ezypay,
     description: `Ezypay is a leading subscription and payment collection provider in the Asia-Pacific region, offering embedded payment solutions for SaaS companies and technology platforms. I worked on two major projects—<b>Ezypay Merchant Platform</b>, a standalone Progressive Web App (PWA) for Ezypay’s clients, and <b>EVA</b>, an internal support tool for handling customer inquiries related to payments and subscriptions.
 
     <br><br>
@@ -36,6 +44,7 @@ export const experiences = [
     company: "RevTech Media",
     startDate: "2019-09",
     endDate: "2019-11",
+    key: ExperienceKey.RevTechMedia,
     description: `RevTech Media is a marketing and technology services company specializing in distributing insurance, utilities, telco, and financial products across the globe. I worked on the development of the <b>One Big Switch</b> platform, enabling users to discover the best utility deals and access exclusive discounts through collective buying power.
 
     <br><br>

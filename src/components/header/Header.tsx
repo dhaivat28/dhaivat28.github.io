@@ -27,7 +27,7 @@ export const Header: React.FC = () => {
 
   return (
     <div
-      className={`w-full sm:flex sm:justify-center sm:items-center sticky top-0 bg-white z-10 transition-shadow duration-300 ${
+      className={`w-full sm:flex sm:justify-center sm:items-center sticky top-0 bg-white z-50 transition-shadow duration-300 ${
         scrolled ? "shadow-md h-16" : "h-24"
       }`}
     >

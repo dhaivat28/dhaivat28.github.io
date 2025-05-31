@@ -1,7 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
 import { AboutMe } from "./components/about-me/AboutMe";
 import { Academics } from "./components/Academics/Academics";
-import { Experience } from "./components/experience/Experience";
+import { ExperienceNew } from "./components/experience/ExperienceStack";
 import { Footer } from "./components/footer/Footer";
 import { Header } from "./components/header/Header";
 import { Hero } from "./components/hero/Hero";
@@ -31,7 +31,7 @@ function App() {
       </section>
 
       <SectionFadeWrapper sectionId="experience">
-        <Experience />
+        <ExperienceNew />
       </SectionFadeWrapper>
 
       <section id="education" className="py-12">

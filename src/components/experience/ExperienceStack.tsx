@@ -1,11 +1,8 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useMemo, useState } from "react";
-import {
-  ExperienceKey,
-  experiences,
-  formatYearMonth,
-  getExperienceDuration,
-} from "./utils";
+import { TechnologyBadge } from "../shared/TechnologyBadge";
+import { ExperienceKey, MY_EXPERIENCES as experiences } from "./data";
+import { formatYearMonth, getExperienceDuration } from "./utils";
 
 export const ExperienceNew = () => {
   const [selectedExperienceKey, setSelectedExperienceKey] =
@@ -53,12 +50,11 @@ export const ExperienceNew = () => {
             ))}
           </div>
         </div>
-
         {/* End */}
       </div>
 
       <div className="flex-4/6 p-4 relative">
-        <div className="mt-10 h-[420px]">
+        <div className="mt-10 h-[500px]">
           <AnimatePresence mode="wait">
             <motion.div
               key={selectedExperienceKey}
@@ -97,6 +93,16 @@ export const ExperienceNew = () => {
                   __html: selectedExperience?.description ?? "",
                 }}
               />
+
+              <h4 className="font-nunito font-semibold text-lg mt-4">
+                Technology Stack:
+              </h4>
+
+              <div className="flex flex-wrap gap-2 mt-2">
+                {selectedExperience.tecStack.map(({ name, icon }) => (
+                  <TechnologyBadge Icon={icon} name={name} key={name} />
+                ))}
+              </div>
             </motion.div>
           </AnimatePresence>
         </div>

@@ -1,4 +1,5 @@
-import { experiences, formatYearMonth, getExperienceDuration } from "./utils";
+import { MY_EXPERIENCES as experiences } from "./data";
+import { formatYearMonth, getExperienceDuration } from "./utils";
 
 export const Experience = () => {
   return (

@@ -1,6 +1,7 @@
+import { TechnologyBadge } from "../shared/TechnologyBadge";
 import type { TechStack } from "./utilt";
 
-export const TechstackBadge = ({ title, technologies }: TechStack) => {
+export const TechstackBadgeContainer = ({ title, technologies }: TechStack) => {
   return (
     <div
       key={title}
@@ -11,12 +12,7 @@ export const TechstackBadge = ({ title, technologies }: TechStack) => {
       </span>
       <div className="flex flex-wrap gap-2">
         {technologies.map(({ icon: Icon, name }) => (
-          <span
-            key={name}
-            className="flex cursor-pointer items-center gap-2 rounded-md border border-black/10 px-2 py-1 font-mono font-medium text-neutral-500 duration-200 hover:bg-black/5 motion-reduce:transition-none w-fit"
-          >
-            <Icon className="w-5 h-5" /> {name}
-          </span>
+          <TechnologyBadge Icon={Icon} name={name} key={name} />
         ))}
       </div>
     </div>

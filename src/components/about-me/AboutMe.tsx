@@ -1,4 +1,4 @@
-import { TechstackBadge } from "./TechstackBadge";
+import { TechstackBadgeContainer } from "./TechstackBadge";
 import { TECH_STACK as techStack } from "./utilt";
 
 export const AboutMe = () => {
@@ -56,7 +56,7 @@ export const AboutMe = () => {
         <div className="flex gap-4">
           <div className="flex flex-col gap-4">
             {techStack.slice(0, 3).map(({ title, technologies }) => (
-              <TechstackBadge
+              <TechstackBadgeContainer
                 key={title}
                 title={title}
                 technologies={technologies}
@@ -65,7 +65,7 @@ export const AboutMe = () => {
           </div>
           <div className="flex flex-col gap-4">
             {techStack.slice(3, 6).map(({ title, technologies }) => (
-              <TechstackBadge
+              <TechstackBadgeContainer
                 key={title}
                 title={title}
                 technologies={technologies}

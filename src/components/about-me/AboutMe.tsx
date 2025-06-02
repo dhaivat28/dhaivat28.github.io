@@ -1,10 +1,10 @@
 import { TechstackBadgeContainer } from "./TechstackBadge";
-import { TECH_STACK as techStack } from "./utilt";
+import { TECH_STACK as techStack } from "./data";
 
 export const AboutMe = () => {
   return (
-    <div className="flex container mx-auto border-dotted p-4">
-      <div className="flex-1/2 p-4 ">
+    <div className="flex container mx-auto border-dotted p-4 flex-col xl:flex-row">
+      <div className="flex-1/2 p-4">
         <h2 className="font-nunito font-extrabold text-2xl sm:text-3xl mb-6">
           About me...
         </h2>

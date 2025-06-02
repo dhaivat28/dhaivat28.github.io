@@ -2,7 +2,7 @@ import { academics, courses } from "./utils";
 
 export const Academics = () => {
   return (
-    <div className="container mx-auto flex p-4 gap-5">
+    <div className="container mx-auto flex flex-col xl:flex-row p-4 gap-5">
       <div className="flex-1/2 p-4">
         <h2 className="font-nunito font-extrabold text-2xl sm:text-3xl mb-6">
           Education

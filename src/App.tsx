@@ -1,17 +1,16 @@
 import { BrowserRouter } from "react-router-dom";
 import { AboutMe } from "./components/about-me/AboutMe";
 import { Academics } from "./components/Academics/Academics";
-import { ExperienceNew } from "./components/experience/ExperienceStack";
+import { ExperienceStackDesktop } from "./components/experience/ExperienceStackDesktop";
+import { ExperienceStackMobile } from "./components/experience/ExperienceStackMobile";
 import { Footer } from "./components/footer/Footer";
 import { Header } from "./components/header/Header";
 import { Hero } from "./components/hero/Hero";
 import { Projects } from "./components/projects/Projects";
-import { ViewportHelper } from "./components/ViewportHelper";
 
 function App() {
   return (
     <BrowserRouter>
-      <ViewportHelper visible={false} />
       <Header />
 
       <section
@@ -25,19 +24,29 @@ function App() {
         <AboutMe />
       </section>
 
-      <section id="projects" className="py-12">
+      <section id="projects" className="py-6 xl:py-12">
         <Projects />
       </section>
 
-      <section id="experience" className="py-12 bg-[#f8f7f1]">
-        <ExperienceNew />
+      <section
+        id="experience-desktop"
+        className="py-6 xl:py-12 bg-[#f8f7f1] hidden xl:block"
+      >
+        <ExperienceStackDesktop />
       </section>
 
-      <section id="education" className="py-12">
+      <section
+        id="experience-mobile"
+        className="py-6 xl:py-12 bg-[#f8f7f1] xl:hidden"
+      >
+        <ExperienceStackMobile />
+      </section>
+
+      <section id="education" className="py-6 xl:py-12">
         <Academics />
       </section>
 
-      <section id="contact" className="py-12 bg-[#f8f7f1]">
+      <section id="contact" className="py-6 xl:py-12 bg-[#f8f7f1]">
         <Footer />
       </section>
     </BrowserRouter>

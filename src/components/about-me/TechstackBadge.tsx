@@ -1,5 +1,5 @@
 import { TechnologyBadge } from "../shared/TechnologyBadge";
-import type { TechStack } from "./utilt";
+import type { TechStack } from "./data";
 
 export const TechstackBadgeContainer = ({ title, technologies }: TechStack) => {
   return (

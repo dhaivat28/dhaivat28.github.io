@@ -5,10 +5,14 @@ import { ReactComponent as DocketLogo } from "../../assets/tech-stack-icons/dock
 import { ReactComponent as ExpressJsLogo } from "../../assets/tech-stack-icons/express-original.svg";
 import { ReactComponent as GraphqlLogo } from "../../assets/tech-stack-icons/graphql-plain.svg";
 import { ReactComponent as HasuraLogo } from "../../assets/tech-stack-icons/hasura.svg";
+import { ReactComponent as JsLogo } from "../../assets/tech-stack-icons/js-svgrepo-com.svg";
 import { ReactComponent as MikroOrmLogo } from "../../assets/tech-stack-icons/mikro-orm.svg";
 import { ReactComponent as NodeJsLogo } from "../../assets/tech-stack-icons/nodejs-original.svg";
 import { ReactComponent as PostgresLogo } from "../../assets/tech-stack-icons/postgresql-original.svg";
 import { ReactComponent as ReactLogoSvg } from "../../assets/tech-stack-icons/react-original.svg";
+import { ReactComponent as ReduxLogo } from "../../assets/tech-stack-icons/redux-logo.svg";
+import { ReactComponent as TsLogoSvg } from "../../assets/tech-stack-icons/typescript-original.svg";
+import { ReactComponent as VueJsLogo } from "../../assets/tech-stack-icons/vue-svgrepo-com.svg";
 
 export enum ExperienceKey {
   BingoIndustries = "Bingo Industries",
@@ -39,7 +43,11 @@ export const MY_EXPERIENCES = [
       },
       {
         name: "React Native",
-        icon: NodeJsLogo,
+        icon: ReactLogoSvg,
+      },
+      {
+        name: "Typescript",
+        icon: TsLogoSvg,
       },
       {
         name: "Node.js",
@@ -82,6 +90,10 @@ export const MY_EXPERIENCES = [
       {
         name: "Angular",
         icon: AngularLogo,
+      },
+      {
+        name: "Vue.js",
+        icon: VueJsLogo,
       },
       {
         name: "CapacitorJs",
@@ -128,6 +140,14 @@ export const MY_EXPERIENCES = [
       {
         name: "React",
         icon: ReactLogoSvg,
+      },
+      {
+        name: "Redux",
+        icon: ReduxLogo,
+      },
+      {
+        name: "Javascript",
+        icon: JsLogo,
       },
       {
         name: "GraphQL",

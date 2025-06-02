@@ -19,43 +19,50 @@ export const Header: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 30);
+      const y = window.scrollY;
+      if (y > 60 && !scrolled) {
+        setScrolled(true);
+      } else if (y < 40 && scrolled) {
+        setScrolled(false);
+      }
     };
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [scrolled]);
 
   return (
-    <div
-      className={`w-full sm:flex sm:justify-center sm:items-center sticky top-0 bg-white z-50 transition-shadow duration-300 ${
-        scrolled ? "shadow-md h-16" : "h-24"
-      }`}
-    >
-      {/* Desktop menu */}
-      <div className="hidden sm:flex sm:gap-10 justify-center items-center shadow-lg sm:shadow-none cursor-pointer">
-        {links.map((link) => (
-          <Link
-            key={link.name}
-            aria-label={link.name}
-            to={link.path}
-            smooth={true}
-            duration={500}
-            spy={true}
-            offset={-60}
-            activeClass="text-ocean-blue"
-            className="font-nunito text-base font-semibold"
-          >
-            {link.name}
-          </Link>
-        ))}
+    <>
+      <div
+        className={`hidden w-full lg:flex lg:justify-center lg:items-center sticky top-0 bg-white z-50 transition-all duration-300 ease-in-out ${
+          scrolled ? "shadow-md h-16" : "h-24"
+        }`}
+      >
+        {/* Desktop menu */}
+        <div className="hidden justify-center items-center shadow-lg lg:flex lg:gap-10 lg:shadow-none cursor-pointer">
+          {links.map((link) => (
+            <Link
+              key={link.name}
+              aria-label={link.name}
+              to={link.path === "experience" ? "experience-desktop" : link.path}
+              smooth={true}
+              duration={500}
+              spy={true}
+              offset={-60}
+              activeClass="text-ocean-blue"
+              className="font-nunito text-base font-semibold"
+            >
+              {link.name}
+            </Link>
+          ))}
+        </div>
       </div>
-
       {/* Mobile menu toggle button*/}
-      <div className="sm:hidden border-dotted border-1 border-blue-500">
+      <div className="lg:hidden relative p-2">
         <button
           onClick={toggleMenu}
           type="button"
-          className="focus:outline-none"
+          className="focus:outline-none "
           aria-label="Hamburger Menu"
         >
           <svg
@@ -70,27 +77,26 @@ export const Header: React.FC = () => {
             )}
           </svg>
         </button>
+        {/* Mobile menu*/}
+        <div
+          className={`
+            absolute top-13 left-0 bottom-0 w-full bg-white flex flex-col justify-between gap-2 p-4 font-nunito font-semibold shadow-lg text-lg lg:hidden
+            transition-all duration-300 ease-in-out overflow-hidden z-10
+            ${showMenu ? "opacity-100 h-80" : "opacity-0 h-0"}
+          `}
+        >
+          {links.map((link) => (
+            <Link
+              key={link.name}
+              aria-label={link.name}
+              to={link.path === "experience" ? "experience-mobile" : link.path}
+              className="cursor-pointer"
+            >
+              {link.name}
+            </Link>
+          ))}
+        </div>
       </div>
-
-      {/* Mobile menu*/}
-      <div
-        className={
-          showMenu
-            ? "block m-0 sm:ml-4 mt-5 sm:mt-3 sm:flex p-5 sm:p-0 justify-center items-center shadow-lg sm:shadow-none"
-            : "hidden"
-        }
-      >
-        {links.map((link) => (
-          <Link
-            key={link.name}
-            aria-label={link.name}
-            to={link.path}
-            className="block text-left text-lg dark:text-ternary-light sm:mx-4 mb-2 sm:py-2"
-          >
-            {link.name}
-          </Link>
-        ))}
-      </div>
-    </div>
+    </>
   );
 };

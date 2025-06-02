@@ -1,27 +1,19 @@
+import { TechnologyBadge } from "../shared/TechnologyBadge";
 import { MY_EXPERIENCES as experiences } from "./data";
 import { formatYearMonth, getExperienceDuration } from "./utils";
 
-export const Experience = () => {
+export const ExperienceStackMobile = () => {
   return (
-    <div className="container mx-auto flex p-4">
-      <div className="flex-1/4 p-4">
-        <p className="font-nunito font-extrabold text-4xl">My Experience</p>
-        <p className="font-nunito font-normal text-md mt-4">
-          I've had the pleasure of working with companies across various
-          industries — from technology and design to logistics and construction.
-          This diverse experience has not only broadened my perspective but also
-          strengthened my ability to adapt quickly, collaborate with
-          cross-functional teams, and deliver solutions that align with each
-          industry's unique goals and challenges.
+    <div className="container mx-auto p-4">
+      <div className="p-4">
+        <p className="font-nunito font-extrabold text-2xl sm:text-3xl mb-6">
+          My Experience
         </p>
-      </div>
-
-      <div className="flex-3/4 p-4">
         <div className="relative">
-          <div className="absolute left-[250px] top-1 bottom-0 w-2 rounded-xl bg-gray-300"></div>
+          <div className="absolute left-[180px] top-1 bottom-0 w-2 rounded-xl bg-gray-300"></div>
           {experiences.map((exp, idx) => (
             <div key={idx} className="flex mb-12">
-              <div className="min-w-[250px] text-right pr-4 pt-0.5">
+              <div className="min-w-[180px] text-right pr-4 pt-0.5">
                 <p className="font-nunito font-semibold text-gray-500 text-md">
                   {formatYearMonth(exp.startDate)} -{" "}
                   {exp.endDate ? formatYearMonth(exp.endDate) : "Present"}
@@ -50,6 +42,15 @@ export const Experience = () => {
                       __html: exp.description,
                     }}
                   />
+                  <h4 className="font-nunito font-semibold text-lg mt-4">
+                    Technology Stack:
+                  </h4>
+
+                  <div className="flex flex-wrap gap-2.5 mt-2.5">
+                    {exp.tecStack.map(({ name, icon }) => (
+                      <TechnologyBadge Icon={icon} name={name} key={name} />
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>

@@ -4,7 +4,7 @@ import { TechnologyBadge } from "../shared/TechnologyBadge";
 import { ExperienceKey, MY_EXPERIENCES as experiences } from "./data";
 import { formatYearMonth, getExperienceDuration } from "./utils";
 
-export const ExperienceNew = () => {
+export const ExperienceStackDesktop = () => {
   const [selectedExperienceKey, setSelectedExperienceKey] =
     useState<ExperienceKey>(ExperienceKey.BingoIndustries);
 
@@ -54,7 +54,7 @@ export const ExperienceNew = () => {
       </div>
 
       <div className="flex-4/6 p-4 relative">
-        <div className="mt-10 h-[500px]">
+        <div className="mt-10 h-[600px]">
           <AnimatePresence mode="wait">
             <motion.div
               key={selectedExperienceKey}
@@ -98,7 +98,7 @@ export const ExperienceNew = () => {
                 Technology Stack:
               </h4>
 
-              <div className="flex flex-wrap gap-2 mt-2">
+              <div className="flex flex-wrap gap-2.5 mt-2.5">
                 {selectedExperience.tecStack.map(({ name, icon }) => (
                   <TechnologyBadge Icon={icon} name={name} key={name} />
                 ))}

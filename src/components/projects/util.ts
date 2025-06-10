@@ -1,5 +1,6 @@
 import aspironImg from "../../assets/portfolio/aspiron_web_solutions.png";
 import BestPrixImg from "../../assets/portfolio/bestprix.png";
+import budgetTracker from "../../assets/portfolio/budget_tracker.png";
 import caleaImg from "../../assets/portfolio/calea.png";
 import forkifyImg from "../../assets/portfolio/forkify.png";
 import natoursImg from "../../assets/portfolio/natours.png";
@@ -17,10 +18,11 @@ export interface ProjectItem {
 export const PROJECTS_DATA: ProjectItem[] = [
   {
     id: 0,
-    title: "Budgetzy.io",
-    image: natoursImg,
+    title: "Simply Fi",
+    image: budgetTracker,
     isNew: true,
-    description: "Description for Budgetzy.io will be added soon.",
+    description:
+      "Back in 2019, my partner and I managed finances with spreadsheets, but they were limiting. I tried Notion for better visuals and structure, but it lacked analytics and dynamic features. It improved our setup slightly, but still wasn’t a complete or convenient budgeting solution.",
   },
   {
     id: 1,

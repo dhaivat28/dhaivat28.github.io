@@ -3,6 +3,10 @@ import { FaGithub } from "react-icons/fa";
 import { LiaExternalLinkSquareAltSolid } from "react-icons/lia";
 import type { ProjectItem } from "./util";
 
+export interface ProjectCardProps extends ProjectItem {
+  setShowNewProjectModal: (show: boolean) => void;
+}
+
 export const ProjectCard = ({
   image,
   title,
@@ -10,7 +14,8 @@ export const ProjectCard = ({
   githubLink,
   previewUrl,
   isNew,
-}: ProjectItem) => {
+  setShowNewProjectModal,
+}: ProjectCardProps) => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -29,8 +34,8 @@ export const ProjectCard = ({
             alt={`Project: ${title}`}
           />
           {isNew && (
-            <span className="absolute top-2 right-2 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow z-50">
-              New
+            <span className="absolute top-2 right-2 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow z-10">
+              Coming Soon
             </span>
           )}
         </div>
@@ -38,7 +43,6 @@ export const ProjectCard = ({
           <p className="font-nunito font-semibold text-center text-lg md:text-xl mb-2">
             {title}
           </p>
-
           <p
             className="font-nunito text-charcoal text-md min-h-[240px]"
             dangerouslySetInnerHTML={{
@@ -64,6 +68,14 @@ export const ProjectCard = ({
               >
                 <span>Live Preview</span> <LiaExternalLinkSquareAltSolid />
               </a>
+            </div>
+          )}
+          {isNew && (
+            <div className="flex justify-center gap-1 items-center mt-6">
+              <span onClick={() => setShowNewProjectModal(true)}>
+                Read More
+              </span>
+              <LiaExternalLinkSquareAltSolid />
             </div>
           )}
         </div>

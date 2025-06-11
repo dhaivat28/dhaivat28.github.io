@@ -64,21 +64,24 @@ export const ExperienceStackDesktop = () => {
               transition={{ duration: 0.4 }}
               className="p-4"
             >
+              {/* Title and Company */}
               <h3 className="text-lg font-nunito font-semibold">
                 {selectedExperience?.title}{" "}
-                <span className="text-gray-700 font-normal font-nunito">
+                <span className="text-gray-600 font-semibold font-nunito">
                   @ {selectedExperience?.company}
                 </span>
               </h3>
 
               <div className="flex items-center gap-4">
-                <p className="font-nunito font-semibold text-gray-700">
+                {/* Job Dates */}
+                <p className="font-nunito font-semibold text-gray-500">
                   {formatYearMonth(selectedExperience.startDate)} -{" "}
                   {selectedExperience.endDate
                     ? formatYearMonth(selectedExperience.endDate)
                     : "Present"}
                 </p>
-                <span className="font-nunito text-gray-600">
+                {/* Job Duration */}
+                <span className="font-nunito text-gray-500">
                   [
                   {getExperienceDuration(
                     selectedExperience.startDate,

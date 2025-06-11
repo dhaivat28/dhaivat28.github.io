@@ -41,7 +41,7 @@ export const PrismaTech = { name: "Prisma", icon: PrismaLogo };
 
 // Mobile
 export const ReactNativeTech = { name: "React Native", icon: ReactLogoSvg };
-export const IonicTech = { name: "IONIC", icon: IonicLogo };
+export const IonicTech = { name: "Ionic", icon: IonicLogo };
 export const CapacitorTech = { name: "CapacitorJs", icon: CapacitorLogo };
 
 // DevOps & Cloud

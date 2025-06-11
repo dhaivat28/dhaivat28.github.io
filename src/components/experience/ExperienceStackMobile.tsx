@@ -10,15 +10,15 @@ export const ExperienceStackMobile = () => {
           My Experience
         </p>
         <div className="relative">
-          <div className="absolute left-[180px] top-1 bottom-0 w-2 rounded-xl bg-gray-300"></div>
+          <div className="absolute left-[180px] top-1 bottom-0 w-2 rounded-xl bg-gray-300 hidden md:block"></div>
           {experiences.map((exp, idx) => (
             <div key={idx} className="flex mb-12">
-              <div className="min-w-[180px] text-right pr-4 pt-0.5">
+              <div className="min-w-[180px] text-right pr-4 pt-0.5 hidden md:block">
                 <p className="font-nunito font-semibold text-gray-500 text-md">
                   {formatYearMonth(exp.startDate)} -{" "}
                   {exp.endDate ? formatYearMonth(exp.endDate) : "Present"}
                 </p>
-                <span className="font-nunito text-gray-400 text-sm">
+                <span className="font-nunito text-gray-500 text-sm">
                   {getExperienceDuration(exp.startDate, exp.endDate)}
                 </span>
               </div>
@@ -32,10 +32,22 @@ export const ExperienceStackMobile = () => {
                 <div>
                   <h3 className="text-lg font-semibold font-nunito">
                     {exp.title}{" "}
-                    <span className="text-gray-500 font-normal font-nunito">
+                    <span className="text-gray-600 font-semibold font-nunito">
                       @ {exp.company}
                     </span>
                   </h3>
+
+                  {/* position & Duration - visible after md */}
+                  <div className="flex items-center gap-2 mb-4 md:hidden">
+                    <p className="font-nunito font-semibold text-gray-500 text-md">
+                      {formatYearMonth(exp.startDate)} -{" "}
+                      {exp.endDate ? formatYearMonth(exp.endDate) : "Present"}
+                    </p>
+                    <span className="font-nunito text-gray-500 text-sm">
+                      [{getExperienceDuration(exp.startDate, exp.endDate)}]
+                    </span>
+                  </div>
+
                   <p
                     className="font-nunito text-gray-700 mt-1"
                     dangerouslySetInnerHTML={{

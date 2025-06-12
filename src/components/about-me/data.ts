@@ -1,5 +1,6 @@
 import {
   AngularTech,
+  ApolloServerTech,
   // DevOps & Cloud
   AwsTech,
   CapacitorTech,
@@ -31,6 +32,7 @@ import {
   RTLTech,
   TailwindTech,
   TestFlightTech,
+  VueJsTech,
 } from "../shared/technology-logos";
 
 export interface Technologies {
@@ -47,10 +49,12 @@ export const FRONTEND_TECHNOLOGIES: Technologies[] = [
   ReduxTech,
   TailwindTech,
   AngularTech,
+  VueJsTech,
 ];
 
 export const BACKEND_TECHNOLOGIES: Technologies[] = [
   NodeJsTech,
+  ApolloServerTech,
   ExpressJsTech,
   GraphQLTech,
   MikroOrmTech,

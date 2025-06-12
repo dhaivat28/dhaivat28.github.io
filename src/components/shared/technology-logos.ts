@@ -1,5 +1,6 @@
 import { ReactComponent as AwsLogo } from "../../assets/tech-stack-icons/amazonwebservices-original-wordmark.svg";
 import { ReactComponent as AngularLogo } from "../../assets/tech-stack-icons/angular-original.svg";
+import { ReactComponent as ApolloServerLogo } from "../../assets/tech-stack-icons/apollographql-svgrepo-com.svg";
 import { ReactComponent as CapacitorLogo } from "../../assets/tech-stack-icons/capacitor-original.svg";
 import { ReactComponent as CirceleCILogo } from "../../assets/tech-stack-icons/circleci-plain.svg";
 import { ReactComponent as CypressLogo } from "../../assets/tech-stack-icons/cypressio-original.svg";
@@ -23,12 +24,14 @@ import { ReactComponent as ReduxLogo } from "../../assets/tech-stack-icons/redux
 import { ReactComponent as RTLLogo } from "../../assets/tech-stack-icons/rtl.svg";
 import { ReactComponent as TailwindLogo } from "../../assets/tech-stack-icons/tailwindcss-original-wordmark.svg";
 import { ReactComponent as TestFlightLogo } from "../../assets/tech-stack-icons/testFlight.svg";
+import { ReactComponent as VueLogo } from "../../assets/tech-stack-icons/vue-svgrepo-com.svg";
 
 // Frontend
 export const ReactTech = { name: "React", icon: ReactNewLogo };
 export const ReduxTech = { name: "Redux", icon: ReduxLogo };
 export const TailwindTech = { name: "Tailwind", icon: TailwindLogo };
 export const AngularTech = { name: "Angular", icon: AngularLogo };
+export const VueJsTech = { name: "Vue.Js", icon: VueLogo };
 
 // Backend
 export const NodeJsTech = { name: "Node.js", icon: NodeJsLogo };
@@ -38,6 +41,10 @@ export const MikroOrmTech = { name: "MikroORM", icon: MikroOrmLogo };
 export const PostgresTech = { name: "Postgres", icon: PostgresLogo };
 export const HasuraTech = { name: "Hasura", icon: HasuraLogo };
 export const PrismaTech = { name: "Prisma", icon: PrismaLogo };
+export const ApolloServerTech = {
+  name: "Apollo Server",
+  icon: ApolloServerLogo,
+};
 
 // Mobile
 export const ReactNativeTech = { name: "React Native", icon: ReactLogoSvg };

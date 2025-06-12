@@ -36,14 +36,14 @@ export const ProjectModal = ({ setShowNewProjectModal }: ProjectModalProps) => {
           <Carousel />
 
           <p className="mt-6 text-gray-700">
-            Back in 2019, my partner and I were managing our finances using
-            conventional spreadsheets. While spreadsheets gave us a basic
-            structure to log income and expenses, they quickly became limiting.
-            To improve this, I tried setting up a system using Notion.so. It
-            offered a bit more flexibility and a better user interface, but it
-            still lacked dynamic features like analytics, robust filtering or
-            summarization. It was more visual than Excel but still didn’t feel
-            like a true solution.
+            Back in late December 2023, my partner and I were managing our
+            finances using conventional spreadsheets. While spreadsheets gave us
+            a basic structure to log income and expenses, they quickly became
+            limiting. To improve this, I tried setting up a system using
+            Notion.so. It offered a bit more flexibility and a better user
+            interface, but it still lacked dynamic features like analytics,
+            robust filtering or summarization. It was more visual than Excel but
+            still didn’t feel like a true solution.
           </p>
           <br />
           <p className="text-gray-700">

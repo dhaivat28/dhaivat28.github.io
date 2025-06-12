@@ -19,11 +19,11 @@ import {
   JestTech,
   JiraTech,
   MikroOrmTech,
+  NestJsTech,
   // Backend
   NodeJsTech,
   PostgresTech,
   PrismaTech,
-
   // Mobile
   ReactNativeTech,
   // Frontend
@@ -61,6 +61,7 @@ export const BACKEND_TECHNOLOGIES: Technologies[] = [
   PostgresTech,
   HasuraTech,
   PrismaTech,
+  NestJsTech,
 ];
 
 export const MOBILE_TECHNOLOGIES: Technologies[] = [

@@ -15,6 +15,7 @@ import { ReactComponent as IonicLogo } from "../../assets/tech-stack-icons/ionic
 import { ReactComponent as JestLogo } from "../../assets/tech-stack-icons/jest-plain.svg";
 import { ReactComponent as JiraLogo } from "../../assets/tech-stack-icons/jira-original.svg";
 import { ReactComponent as MikroOrmLogo } from "../../assets/tech-stack-icons/mikro-orm.svg";
+import { ReactComponent as NestJSLogo } from "../../assets/tech-stack-icons/nestjs-svgrepo-com.svg";
 import { ReactComponent as NodeJsLogo } from "../../assets/tech-stack-icons/nodejs-original.svg";
 import { ReactComponent as PostgresLogo } from "../../assets/tech-stack-icons/postgresql-original.svg";
 import { ReactComponent as PrismaLogo } from "../../assets/tech-stack-icons/prisma-original.svg";
@@ -45,6 +46,10 @@ export const ApolloServerTech = {
   name: "Apollo Server",
   icon: ApolloServerLogo,
 };
+export const NestJsTech = {
+  name: "NestJs",
+  icon: NestJSLogo,
+};
 
 // Mobile
 export const ReactNativeTech = { name: "React Native", icon: ReactLogoSvg };
@@ -70,3 +75,4 @@ export const Dynamics365Tech = {
   icon: Dynamics365Logo,
 };
 export const JiraTech = { name: "Jira / Confluence", icon: JiraLogo };
+export { NestJSLogo };

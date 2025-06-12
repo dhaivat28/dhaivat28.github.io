@@ -22,7 +22,7 @@ export const PROJECTS_DATA: ProjectItem[] = [
     image: budgetTracker,
     isNew: true,
     description:
-      "Back in 2019, my partner and I managed finances with spreadsheets, but they were limiting. I tried Notion for better visuals and structure, but it lacked analytics and dynamic features. It improved our setup slightly, but still wasn’t a complete or convenient budgeting solution.",
+      "Back in late December 2023, my partner and I managed finances with spreadsheets, but they were limiting. I tried Notion for better visuals and structure, but it lacked analytics and dynamic features. It improved our setup slightly, but still wasn’t a complete or convenient budgeting solution.",
   },
   {
     id: 1,

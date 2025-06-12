@@ -92,13 +92,10 @@ export const MY_EXPERIENCES = [
         icon: AngularLogo,
       },
       {
-        name: "Vue.js",
-        icon: VueJsLogo,
-      },
-      {
         name: "CapacitorJs",
         icon: CapacitorLogo,
       },
+
       {
         name: "GraphQL",
         icon: GraphqlLogo,
@@ -122,6 +119,14 @@ export const MY_EXPERIENCES = [
       {
         name: "Postgres",
         icon: PostgresLogo,
+      },
+      {
+        name: "Vue.js",
+        icon: VueJsLogo,
+      },
+      {
+        name: "Vuex",
+        icon: VueJsLogo,
       },
     ],
   },

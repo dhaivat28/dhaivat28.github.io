@@ -18,7 +18,7 @@ export interface ProjectItem {
 export const PROJECTS_DATA: ProjectItem[] = [
   {
     id: 0,
-    title: "Simply Fi",
+    title: "Budget Notion",
     image: budgetTracker,
     isNew: true,
     description:

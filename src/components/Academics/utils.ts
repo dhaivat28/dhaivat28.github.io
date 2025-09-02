@@ -19,6 +19,15 @@ export const academics = [
 
 export const courses = [
   {
+    title: "AWS Certified Developer - Associate",
+    provider: "Amazon Web Services",
+    date: "August 2025",
+    certificate:
+      "https://www.credly.com/badges/f480a1c0-e720-420a-b52d-02ff8ed78712/public_url",
+    description:
+      "Gained hands-on expertise in developing, deploying, and debugging cloud-native applications using AWS services such as API Gateway, Lambda, SQS, SNS, DynamoDB, S3, CloudFormation, CloudWatch and IAM.",
+  },
+  {
     title: "The Complete JavaScript Course 2025: From Zero to Expert!",
     provider: "Udemy - Jonas Schmedtmann (Author)",
     date: "May 2019",

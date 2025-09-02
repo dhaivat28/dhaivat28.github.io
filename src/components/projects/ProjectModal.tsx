@@ -31,7 +31,7 @@ export const ProjectModal = ({ setShowNewProjectModal }: ProjectModalProps) => {
             <IoCloseCircleOutline className="h-8 w-8 cursor-pointer" />
           </button>
 
-          <h2 className="text-3xl font-semibold mb-6">Simply Fi</h2>
+          <h2 className="text-3xl font-semibold mb-6">Budget Notion</h2>
 
           <Carousel />
 

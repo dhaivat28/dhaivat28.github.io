@@ -19,7 +19,7 @@ export const Hero = () => {
           </div>
 
           <p className="text-gray-600 text-lg max-w-[600px]">
-            Software engineer with 5+ years of experience in developing web and
+            Software engineer with 6+ years of experience in developing web and
             mobile apps, with a strong focus on building efficient and scalable
             solutions. Experienced in contributing to a range of internal and
             customer-facing projects across industries such as fintech,

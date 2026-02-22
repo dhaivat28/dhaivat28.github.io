@@ -39,7 +39,7 @@ export const Header: React.FC = () => {
         }`}
       >
         {/* Desktop menu */}
-        <div className="hidden justify-center items-center shadow-lg lg:flex lg:gap-10 lg:shadow-none cursor-pointer">
+        <div className="hidden justify-center items-center shadow-lg lg:flex lg:gap-15 lg:shadow-none cursor-pointer">
           {links.map((link) => (
             <Link
               key={link.name}
@@ -50,7 +50,7 @@ export const Header: React.FC = () => {
               spy={true}
               offset={-60}
               activeClass="text-ocean-blue"
-              className="font-nunito text-base font-semibold"
+              className="font-sans text-base font-semibold text-gray-800"
             >
               {link.name}
             </Link>
@@ -80,7 +80,7 @@ export const Header: React.FC = () => {
         {/* Mobile menu*/}
         <div
           className={`
-            absolute top-13 left-0 bottom-0 w-full bg-white flex flex-col justify-between gap-2 p-4 font-nunito font-semibold shadow-lg text-lg lg:hidden
+            absolute top-13 left-0 bottom-0 w-full bg-white flex flex-col justify-between gap-2 p-4 font-sans font-semibold shadow-lg text-lg lg:hidden
             transition-all duration-300 ease-in-out overflow-hidden z-10
             ${showMenu ? "opacity-100 h-80" : "opacity-0 h-0"}
           `}
@@ -90,7 +90,7 @@ export const Header: React.FC = () => {
               key={link.name}
               aria-label={link.name}
               to={link.path === "experience" ? "experience-mobile" : link.path}
-              className="cursor-pointer"
+              className="cursor-pointer text-gray-800"
             >
               {link.name}
             </Link>

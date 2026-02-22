@@ -10,7 +10,7 @@ export const Projects = () => {
     <>
       <div className="container mx-auto p-4">
         <div className="text-center">
-          <p className="font-nunito font-semibold text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light pb-8">
+          <p className="font-sans font-semibold text-2xl sm:text-4xl mb-1 text-gray-800 pb-8">
             Projects Portfolio
           </p>
         </div>

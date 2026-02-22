@@ -1,4 +1,4 @@
-import { FaEnvelope, FaGithub, FaPhone } from "react-icons/fa";
+import { FaEnvelope, FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 export const Footer = () => {
   return (
@@ -6,22 +6,22 @@ export const Footer = () => {
       <div className="w-full flex flex-col gap-2 xl:gap-6 items-center xl:flex-row xl:justify-end p-4">
         <a
           href="mailto:dhaivat28@gmail.com"
-          className="w-fit font-nunito font-semibold text-gray-600 flex items-center gap-2"
+          className="w-fit font-sans font-semibold text-gray-600 flex items-center gap-2"
         >
           <FaEnvelope /> dhaivat28@gmail.com
         </a>
 
-        <a
+        {/* <a
           href="tel:+61469729216"
-          className="w-fit font-nunito font-semibold text-gray-700  flex items-center gap-2"
+          className="w-fit font-sans font-semibold text-gray-700  flex items-center gap-2"
         >
           <FaPhone />
           +61 469 729 216
-        </a>
+        </a> */}
       </div>
 
       <div className="flex flex-col items-center gap-2 xl:flex-row xl:gap-0 xl:justify-between p-4 border-t-2 border-gray-200">
-        <h4 className="font-nunito font-semibold text-gray-800">
+        <h4 className="font-sans font-semibold text-gray-800">
           Dhaivat Parikh
         </h4>
 

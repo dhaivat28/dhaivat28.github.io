@@ -18,7 +18,7 @@ export const ExperienceStackDesktop = () => {
   return (
     <div className="container mx-auto flex p-4">
       <div className="flex-2/6 p-4">
-        <p className="font-nunito font-extrabold text-4xl">My Experience</p>
+        <p className="font-sans font-extrabold text-4xl text-gray-800">My Experience</p>
 
         <div className="flex mt-8">
           {/* Vertical segmented line */}
@@ -43,7 +43,7 @@ export const ExperienceStackDesktop = () => {
               <div
                 key={key}
                 onClick={() => setSelectedExperienceKey(key)}
-                className="cursor-pointer text-lg font-nunito font-medium text-gray-800 hover:text-blue-600 h-[60px] flex flex-col justify-center"
+                className="cursor-pointer text-lg font-sans font-medium text-gray-800 hover:text-blue-600 h-[60px] flex flex-col justify-center"
               >
                 {company}
               </div>
@@ -65,23 +65,23 @@ export const ExperienceStackDesktop = () => {
               className="p-4"
             >
               {/* Title and Company */}
-              <h3 className="text-lg font-nunito font-semibold">
+              <h3 className="text-lg font-sans font-semibold">
                 {selectedExperience?.title}{" "}
-                <span className="text-gray-600 font-semibold font-nunito">
+                <span className="text-gray-600 font-semibold font-sans">
                   @ {selectedExperience?.company}
                 </span>
               </h3>
 
               <div className="flex items-center gap-4">
                 {/* Job Dates */}
-                <p className="font-nunito font-semibold text-gray-500">
+                <p className="font-sans font-semibold text-gray-500">
                   {formatYearMonth(selectedExperience.startDate)} -{" "}
                   {selectedExperience.endDate
                     ? formatYearMonth(selectedExperience.endDate)
                     : "Present"}
                 </p>
                 {/* Job Duration */}
-                <span className="font-nunito text-gray-500">
+                <span className="font-sans text-gray-500">
                   [
                   {getExperienceDuration(
                     selectedExperience.startDate,
@@ -91,13 +91,13 @@ export const ExperienceStackDesktop = () => {
                 </span>
               </div>
               <p
-                className="font-nunito text-base text-gray-700 mt-6"
+                className="font-sans text-base text-gray-700 mt-6"
                 dangerouslySetInnerHTML={{
                   __html: selectedExperience?.description ?? "",
                 }}
               />
 
-              <h4 className="font-nunito font-semibold text-lg mt-4">
+              <h4 className="font-sans font-semibold text-lg mt-4">
                 Technology Stack:
               </h4>
 

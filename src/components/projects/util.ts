@@ -1,6 +1,6 @@
 import aspironImg from "../../assets/portfolio/aspiron_web_solutions.png";
 import BestPrixImg from "../../assets/portfolio/bestprix.png";
-import budgetTracker from "../../assets/portfolio/budget_tracker.png";
+import budgetNotion from "../../assets/portfolio/budget-notion.png";
 import caleaImg from "../../assets/portfolio/calea.png";
 import forkifyImg from "../../assets/portfolio/forkify.png";
 import natoursImg from "../../assets/portfolio/natours.png";
@@ -18,11 +18,11 @@ export interface ProjectItem {
 export const PROJECTS_DATA: ProjectItem[] = [
   {
     id: 0,
-    title: "Budget Notion",
-    image: budgetTracker,
+    title: "BudgetNotion.com",
+    image: budgetNotion,
     isNew: true,
     description:
-      "Back in late December 2023, my partner and I managed finances with spreadsheets, but they were limiting. I tried Notion for better visuals and structure, but it lacked analytics and dynamic features. It improved our setup slightly, but still wasn’t a complete or convenient budgeting solution.",
+      "Back in February 2024, my partner and I managed finances with spreadsheets, but they were limiting. I tried Notion for better visuals and structure, but it lacked analytics and dynamic features. It improved our setup slightly, but still wasn’t a complete or convenient budgeting solution.",
   },
   {
     id: 1,

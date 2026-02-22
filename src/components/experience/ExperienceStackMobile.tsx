@@ -6,7 +6,7 @@ export const ExperienceStackMobile = () => {
   return (
     <div className="container mx-auto p-4">
       <div className="p-4">
-        <p className="font-nunito font-extrabold text-2xl sm:text-3xl mb-6">
+        <p className="font-sans font-extrabold text-2xl sm:text-3xl mb-6 text-gray-800">
           My Experience
         </p>
         <div className="relative">
@@ -14,11 +14,11 @@ export const ExperienceStackMobile = () => {
           {experiences.map((exp, idx) => (
             <div key={idx} className="flex mb-12">
               <div className="min-w-[180px] text-right pr-4 pt-0.5 hidden md:block">
-                <p className="font-nunito font-semibold text-gray-500 text-md">
+                <p className="font-sans font-semibold text-gray-500 text-md">
                   {formatYearMonth(exp.startDate)} -{" "}
                   {exp.endDate ? formatYearMonth(exp.endDate) : "Present"}
                 </p>
-                <span className="font-nunito text-gray-500 text-sm">
+                <span className="font-sans text-gray-500 text-sm">
                   {getExperienceDuration(exp.startDate, exp.endDate)}
                 </span>
               </div>
@@ -30,31 +30,31 @@ export const ExperienceStackMobile = () => {
                 </div>
 
                 <div>
-                  <h3 className="text-lg font-semibold font-nunito">
+                  <h3 className="text-lg font-semibold font-sans">
                     {exp.title}{" "}
-                    <span className="text-gray-600 font-semibold font-nunito">
+                    <span className="text-gray-600 font-semibold font-sans">
                       @ {exp.company}
                     </span>
                   </h3>
 
                   {/* position & Duration - visible after md */}
                   <div className="flex items-center gap-2 mb-4 md:hidden">
-                    <p className="font-nunito font-semibold text-gray-500 text-md">
+                    <p className="font-sans font-semibold text-gray-500 text-md">
                       {formatYearMonth(exp.startDate)} -{" "}
                       {exp.endDate ? formatYearMonth(exp.endDate) : "Present"}
                     </p>
-                    <span className="font-nunito text-gray-500 text-sm">
+                    <span className="font-sans text-gray-500 text-sm">
                       [{getExperienceDuration(exp.startDate, exp.endDate)}]
                     </span>
                   </div>
 
                   <p
-                    className="font-nunito text-gray-700 mt-1"
+                    className="font-sans text-gray-700 mt-1"
                     dangerouslySetInnerHTML={{
                       __html: exp.description,
                     }}
                   />
-                  <h4 className="font-nunito font-semibold text-lg mt-4">
+                  <h4 className="font-sans font-semibold text-lg mt-4">
                     Technology Stack:
                   </h4>
 

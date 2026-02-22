@@ -5,10 +5,10 @@ export const AboutMe = () => {
   return (
     <div className="flex container mx-auto border-dotted p-4 flex-col xl:flex-row">
       <div className="flex-1/2 p-4">
-        <h2 className="font-nunito font-extrabold text-2xl sm:text-3xl mb-6">
+        <h2 className="font-sans font-extrabold text-2xl sm:text-3xl mb-6 text-gray-800">
           About me...
         </h2>
-        <p className="font-nunito font-normal text-md text-gray-600">
+        <p className="font-sans font-normal text-md text-gray-600">
           My journey in software development began in high school, where I was
           introduced to HTML and CSS. What started as a fascination with
           building static websites quickly evolved into a deep passion for
@@ -44,10 +44,10 @@ export const AboutMe = () => {
         </p>
       </div>
       <div className="flex-1/2 p-4 border-dotted">
-        <h2 className="font-nunito font-extrabold text-2xl sm:text-3xl mb-6">
+        <h2 className="font-sans font-extrabold text-2xl sm:text-3xl mb-6 text-gray-800">
           Technologies I have worked with...
         </h2>
-        <p className="font-nunito font-normal text-md text-gray-600 mb-4">
+        <p className="font-sans font-normal text-md text-gray-600 mb-4">
           I have worked across a diverse range of technologies, from frontend to
           backend, and I am always eager to learn new tools and frameworks. Here
           are some of the key technologies I have experience with:

@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import { LuCircleChevronLeft, LuCircleChevronRight } from "react-icons/lu";
-import budgetTracker_Budgets from "../../assets/portfolio/BudgetTracker/Budgets.png";
-import budgetTracker_Dashboard from "../../assets/portfolio/BudgetTracker/Dashboard.png";
-import budgetTracker_IncomeRecords from "../../assets/portfolio/BudgetTracker/IncomeRecords.png";
-import budgetTracker_Login from "../../assets/portfolio/BudgetTracker/Login.png";
-import budgetTracker_Users from "../../assets/portfolio/BudgetTracker/Users.png";
+import budgetNotionHero from "../../assets/portfolio/budget-notion/hero.png";
+import budgetNotionDashboard from "../../assets/portfolio/budget-notion/dashboard.png";
+import budgetNotionBudgets from "../../assets/portfolio/budget-notion/budgets.png";
+import budgetNotionAccounts from "../../assets/portfolio/budget-notion/accounts.png";
+import budgetNotionExpenses from "../../assets/portfolio/budget-notion/expenses.png";
+import budgetNotionUsers from "../../assets/portfolio/budget-notion/users.png";
 
 export const Carousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -13,23 +14,27 @@ export const Carousel = () => {
   const slides = [
     {
       id: 1,
-      image: budgetTracker_Dashboard,
+      image: budgetNotionHero,
     },
     {
       id: 2,
-      image: budgetTracker_Login,
+      image: budgetNotionDashboard,
     },
     {
       id: 3,
-      image: budgetTracker_Budgets,
+      image: budgetNotionBudgets,
     },
     {
       id: 4,
-      image: budgetTracker_IncomeRecords,
+      image: budgetNotionAccounts,
     },
     {
       id: 5,
-      image: budgetTracker_Users,
+      image: budgetNotionExpenses,
+    },
+    {
+      id: 6,
+      image: budgetNotionUsers,
     },
   ];
 

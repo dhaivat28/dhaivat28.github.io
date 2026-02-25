@@ -4,7 +4,7 @@ export const Academics = () => {
   return (
     <div className="container mx-auto flex flex-col xl:flex-row p-4 gap-5">
       <div className="flex-1/2 p-4">
-        <h2 className="font-nunito font-extrabold text-2xl sm:text-3xl mb-6">
+        <h2 className="font-sans font-extrabold text-2xl sm:text-3xl mb-6 text-gray-800">
           Education
         </h2>
 
@@ -16,7 +16,7 @@ export const Academics = () => {
             >
               <div className="flex justify-between items-start sm:items-center flex-col sm:flex-row">
                 <div>
-                  <h3 className="text-xl font-semibold font-nunito">
+                  <h3 className="text-xl font-semibold font-sans">
                     {edu.degree}
                   </h3>
                   <p className="text-gray-700 dark:text-gray-300">
@@ -36,7 +36,7 @@ export const Academics = () => {
       </div>
 
       <div className="flex-1/2 p-4">
-        <h2 className="font-nunito font-extrabold text-2xl sm:text-3xl mb-6">
+        <h2 className="font-sans font-extrabold text-2xl sm:text-3xl mb-6 text-gray-800">
           Courses
         </h2>
 
@@ -48,7 +48,7 @@ export const Academics = () => {
             >
               <div className="flex flex-col sm:flex-row sm:items-center justify-between">
                 <div>
-                  <h3 className="text-lg font-semibold font-nunito">
+                  <h3 className="text-lg font-semibold font-sans">
                     {course.title}
                   </h3>
                   <p className="text-gray-700 dark:text-gray-300">

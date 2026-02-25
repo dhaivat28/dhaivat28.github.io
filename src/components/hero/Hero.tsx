@@ -45,7 +45,7 @@ export const Hero = () => {
             </a>
             <a
               href="mailto:dhaivat28@gmail.com"
-              className="font-nunito font-semibold text-2xl text-gray-500 hover:text-blue-600 flex items-center gap-2"
+              className="font-sans font-semibold text-2xl text-gray-500 hover:text-blue-600 flex items-center gap-2"
             >
               <FaEnvelope />
             </a>

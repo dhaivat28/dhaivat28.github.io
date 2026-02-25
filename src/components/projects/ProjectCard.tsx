@@ -35,16 +35,16 @@ export const ProjectCard = ({
           />
           {isNew && (
             <span className="absolute top-2 right-2 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow z-10">
-              Coming Soon
+              New{" "}
             </span>
           )}
         </div>
         <div className="py-6 px-6">
-          <p className="font-nunito font-semibold text-center text-lg md:text-xl mb-2">
+          <p className="font-sans font-semibold text-center text-lg md:text-xl mb-2">
             {title}
           </p>
           <p
-            className="font-nunito text-charcoal text-md min-h-[240px]"
+            className="font-sans text-charcoal text-md min-h-[240px]"
             dangerouslySetInnerHTML={{
               __html: description,
             }}
@@ -71,11 +71,23 @@ export const ProjectCard = ({
             </div>
           )}
           {isNew && (
-            <div className="flex justify-center gap-1 items-center mt-6">
-              <span onClick={() => setShowNewProjectModal(true)}>
-                Read More
-              </span>
-              <LiaExternalLinkSquareAltSolid />
+            <div className="flex gap-6 items-center justify-center mt-6">
+              <div
+                className="flex justify-between gap-1 items-center"
+                onClick={() => setShowNewProjectModal(true)}
+              >
+                <span>Showcase</span>
+                <LiaExternalLinkSquareAltSolid />
+              </div>
+
+              <a
+                href={"https://budgetnotion.com/"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex justify-center items-center gap-1 cursor-pointer"
+              >
+                <span>Live Preview</span> <LiaExternalLinkSquareAltSolid />
+              </a>
             </div>
           )}
         </div>
